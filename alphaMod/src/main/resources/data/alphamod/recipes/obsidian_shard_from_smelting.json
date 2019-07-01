@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "minecraft:obsidian"
+  },
+  "result": "alphamod:obsidian_shard",
+  "experience": 1.0,
+  "cookingtime": 200
+}

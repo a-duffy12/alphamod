@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "alphamod:black_sandstone_slab"
+    },
+    {
+      "item": "alphamod:black_sandstone_slab"
+    }
+  ],
+  "result": {
+    "item": "alphamod:chiseled_black_sandstone"
+  }
+}

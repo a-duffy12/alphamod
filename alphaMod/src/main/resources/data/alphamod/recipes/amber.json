@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "alphamod:amber_block"
+    }
+  ],
+  "result": {
+    "item": "alphamod:amber",
+    "count": 9
+  }
+}

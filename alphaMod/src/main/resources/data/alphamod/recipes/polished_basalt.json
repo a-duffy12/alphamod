@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "alphamod:basalt"
+    }
+  },
+  "result": {
+    "item": "alphamod:polished_basalt",
+    "count": 4
+  }
+}

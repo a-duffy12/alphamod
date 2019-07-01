@@ -1,0 +1,49 @@
+{
+	"item.alphamod.amber": "Ambre",
+	
+	"item.alphamod.amber_axe": "Hache en ambre",
+	"item.alphamod.amber_hoe": "Houe en ambre",
+	"item.alphamod.amber_pickaxe": "Pioche en ambre",
+	"item.alphamod.amber_shovel": "Pelle en ambre",
+	"item.alphamod.amber_sword": "Epee en ambre",
+	"item.alphamod.amber_knife": "Couteau en ambre",
+	
+	"block.alphamod.amber_ore": "Minerai d'ambre",
+	"block.alphamod.amber_block": "Bloc d'ambre",
+	
+	"item.alphamod.obsidian_shard": "Eclat d'obsidienne",
+	
+	"item.alphamod.obsidian_axe": "Hache en obsidienne",
+	"item.alphamod.obsidian_hoe": "Houe en obsidienne",
+	"item.alphamod.obsidian_pickaxe": "Pioche en obsidienne",
+	"item.alphamod.obsidian_shovel": "Pelle en obsidienne",
+	"item.alphamod.obsidian_sword": "Epee en obsidienne",
+	"item.alphamod.obsidian_knife": "Couteau en obsidienne",
+	
+	"block.alphamod.basalt": "Basalte",
+	"block.alphamod.polished_basalt": "Basalte poli",
+	
+	"item.alphamod.bone_helmet": "Casque en os",
+	"item.alphamod.bone_chestplate": "Plastron en os",
+	"item.alphamod.bone_leggings": "Jambieres en os",
+	"item.alphamod.bone_boots": "Bottes en os",
+	
+	"item.alphamod.wooden_knife": "Couteau en bois",
+	"item.alphamod.stone_knife": "Couteau en pierre",
+	"item.alphamod.iron_knife": "Couteau en fer",
+	"item.alphamod.golden_knife": "Couteau en or",
+	"item.alphamod.diamond_knife": "Couteau en diamant",
+	
+	"block.alphamod.black_sand": "Sable noir",
+	"block.alphamod.black_sandstone": "Gres noir",
+	"block.alphamod.black_sandstone_slab": "Dalle de gres noir",
+	"block.alphamod.black_sandstone_stairs": "Escaliers de gres noir",
+	"block.alphamod.chiseled_black_sandstone": "Gres noir ciselé",
+	"block.alphamod.cut_black_sandstone": "Gres noir taillé",
+	"block.alphamod.smooth_black_sandstone": "Gres noir lisse",
+	
+	"biome.alphamod.volcanic_beach": "Plage volcanique",
+	"biome.alphamod.volcano": "Volcan",
+	
+	"itemGroup.alphamod": "More Lore" 
+}

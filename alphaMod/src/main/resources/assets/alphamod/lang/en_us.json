@@ -1,0 +1,49 @@
+{
+	"item.alphamod.amber": "Amber",
+	
+	"item.alphamod.amber_axe": "Amber Axe",
+	"item.alphamod.amber_hoe": "Amber Hoe",
+	"item.alphamod.amber_pickaxe": "Amber Pickaxe",
+	"item.alphamod.amber_shovel": "Amber Shovel",
+	"item.alphamod.amber_sword": "Amber Sword",
+	"item.alphamod.amber_knife": "Amber Knife",
+	
+	"block.alphamod.amber_ore": "Amber Ore",
+	"block.alphamod.amber_block": "Block of Amber",
+	
+	"item.alphamod.obsidian_shard": "Obsidian Shard",
+	
+	"item.alphamod.obsidian_axe": "Obsidian Axe",
+	"item.alphamod.obsidian_hoe": "Obsidian Hoe",
+	"item.alphamod.obsidian_pickaxe": "Obsidian Pickaxe",
+	"item.alphamod.obsidian_shovel": "Obsidian Shovel",
+	"item.alphamod.obsidian_sword": "Obsidian Sword",
+	"item.alphamod.obsidian_knife": "Obsidian Knife",
+	
+	"block.alphamod.basalt": "Basalt",
+	"block.alphamod.polished_basalt": "Polished Basalt",
+	
+	"item.alphamod.bone_helmet": "Bone Helmet",
+	"item.alphamod.bone_chestplate": "Bone Chestplate",
+	"item.alphamod.bone_leggings": "Bone Leggings",
+	"item.alphamod.bone_boots": "Bone Boots",
+	
+	"item.alphamod.wooden_knife": "Wooden Knife",
+	"item.alphamod.stone_knife": "Stone Knife",
+	"item.alphamod.iron_knife": "Iron Knife",
+	"item.alphamod.golden_knife": "Golden Knife",
+	"item.alphamod.diamond_knife": "Diamond Knife",
+	
+	"block.alphamod.black_sand": "Black Sand",
+	"block.alphamod.black_sandstone": "Black Sandstone",
+	"block.alphamod.black_sandstone_slab": "Black Sandstone Slab",
+	"block.alphamod.black_sandstone_stairs": "Black Sandstone Stairs",
+	"block.alphamod.chiseled_black_sandstone": "Chiseled Black Sandstone",
+	"block.alphamod.cut_black_sandstone": "Cut Black Sandstone",
+	"block.alphamod.smooth_black_sandstone": "Smooth Black Sandstone",
+	
+	"biome.alphamod.volcanic_beach": "Volcanic Beach",
+	"biome.alphamod.volcano": "Volcano",
+	
+	"itemGroup.alphamod": "More Lore" 
+}

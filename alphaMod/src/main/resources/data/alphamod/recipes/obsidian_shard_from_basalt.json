@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "alphamod:basalt"
+    },
+    {
+      "item": "alphamod:basalt"
+    }  
+  ],
+  "result": {
+    "item": "alphamod:obsidian_shard"
+  }
+}
