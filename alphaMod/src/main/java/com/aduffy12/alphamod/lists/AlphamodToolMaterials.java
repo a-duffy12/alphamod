@@ -1,11 +1,11 @@
-package com.aidz.alphamod.lists;
+package com.aduffy12.alphamod.lists;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 
 
-public enum ToolMaterialList implements IItemTier {
+public enum AlphamodToolMaterials implements IItemTier {
 
 	amber(7.0f, 7.0f, 97, 1, 18, ItemList.amber),
 	obsidian(4.0f, 5.0f, 8193, 3, 12, ItemList.obsidian_shard)
@@ -15,7 +15,7 @@ public enum ToolMaterialList implements IItemTier {
 	private int durability, harvestLevel, enchanability;
 	private Item repairMaterial;
 	
-	private ToolMaterialList(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial) {
+	private AlphamodToolMaterials(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial) {
 		
 		//setting all the parameters
 		this.attackDamage = attackDamage;

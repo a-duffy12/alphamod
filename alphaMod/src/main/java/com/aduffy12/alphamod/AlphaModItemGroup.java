@@ -1,4 +1,4 @@
-package com.aidz.alphamod;
+package com.aduffy12.alphamod;
 
 import com.aidz.alphamod.lists.ItemList;
 

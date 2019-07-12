@@ -1,6 +1,4 @@
-package com.aidz.alphamod.lists;
-
-import com.aidz.alphamod.Main;
+package com.aduffy12.alphamod.lists;
 
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.IArmorMaterial;
@@ -8,9 +6,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
+
+import com.aduffy12.alphamod.Main;
+
 import net.minecraft.init.Items;
 
-public enum ArmorMaterialList implements IArmorMaterial{
+public enum AlphamodArmorMaterials implements IArmorMaterial{
 	
 	bone("bone", 22, new int[] {1, 4, 5, 2}, 5, Items.BONE, "entity.skeleton.ambient", 0.0f) //TODO custom equip sound
 	;
@@ -22,7 +23,7 @@ public enum ArmorMaterialList implements IArmorMaterial{
 	private int[] damageReductionAmount;
 	public static final int[] max_damage_array = new int[] {13, 15, 16, 11};
 	
-	private ArmorMaterialList(String name, int durability, int[] damageReductionAmount, int enchantability, Item repairItem, String equipSound, float toughness) {
+	private AlphamodArmorMaterials(String name, int durability, int[] damageReductionAmount, int enchantability, Item repairItem, String equipSound, float toughness) {
 		
 		//setting all the parameters
 		this.name = name;

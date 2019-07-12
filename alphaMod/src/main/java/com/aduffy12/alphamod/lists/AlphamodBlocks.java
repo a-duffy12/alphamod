@@ -1,8 +1,8 @@
-package com.aidz.alphamod.lists;
+package com.aduffy12.alphamod.lists;
 
 import net.minecraft.block.Block;
 
-public class BlockList {
+public class AlphamodBlocks {
 
 	public static Block amber_ore;
 	public static Block amber_block;

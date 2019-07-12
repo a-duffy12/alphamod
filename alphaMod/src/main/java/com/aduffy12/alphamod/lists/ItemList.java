@@ -1,4 +1,4 @@
-package com.aidz.alphamod.lists;
+package com.aduffy12.alphamod.lists;
 
 import net.minecraft.item.Item;
 
