@@ -16,7 +16,7 @@ public class KnifeConfig {
 				.defineInRange("knife.knife_damage", 0, -2, 10);
 		
 		knife_attack_speed = server
-				.comment("Base attack speed of a knife, in hits per second. Default is 4.0")
+				.comment("Base attack speed of a knife, in hits per second. Default is 4")
 				.defineInRange("knife.knife_speed", 4, -4, 16);
 		
 	}

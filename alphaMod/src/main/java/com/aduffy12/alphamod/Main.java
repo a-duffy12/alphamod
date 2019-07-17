@@ -55,8 +55,8 @@ public class Main {
 	//reference variables for mod information
 	public static final String MOD_ID = "alphamod";
 	public static final String NAME = "More Lore";
-	public static final String VERSION = "0.9.3 beta";
-	public static final String ACCEPTED_VERSIONS = "(1.13.2)";
+	public static final String VERSION = "0.9.5 beta";
+	public static final String ACCEPTED_VERSIONS = "(1.14.3)";
 	
 	//item group for creative mod
 	public static final ItemGroup ALPHAMOD = new AlphaModItemGroup(12, "alphamod");

@@ -1,11 +1,11 @@
 modLoader="javafml" #mandatory
-loaderVersion="[27,)" #mandatory (24 is current forge version)
+loaderVersion="[27,)" #mandatory (27 is current forge version)
 credits="Youtube tutorials Harry Talks and Loremaster for getting me started" #optional
-authors="aiDz" #optional
+authors="aduffy12 aka Omega_Rex" #optional
 
 [[mods]] #mandatory
 modId="alphamod" #mandatory
-version="0.9.3 beta" #mandatory
+version="0.9.5 beta" #mandatory
 displayName="More Lore" #mandatory
 logoFile="" #optional
 description='''
