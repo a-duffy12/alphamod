@@ -3,12 +3,12 @@ package com.aduffy12.alphamod.world;
 import com.aduffy12.alphamod.config.OreGenConfig;
 import com.aduffy12.alphamod.lists.AlphamodBlocks;
 
-import net.minecraft.init.Biomes;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage.Decoration;
-import net.minecraft.world.gen.feature.CompositeFeature;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.MinableConfig;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.OreFeatureConfig.FillerBlockType;
 import net.minecraft.world.gen.placement.CountRange;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -17,7 +17,7 @@ public class OreGeneration {
 
 	public static void setupOreGeneration() {
 		
-		//will spawn in all biomes (amber ore)
+		/*//will spawn in all biomes (amber ore)
 		for(Biome biome : ForgeRegistries.BIOMES) {
 				
 			//amber_ore
@@ -41,6 +41,15 @@ public class OreGeneration {
 		CountRangeConfig amber_ore_placement_jungle = new CountRangeConfig(OreGenConfig.amber_jungle_chance.get(), OreGenConfig.amber_max_height.get(), 0, OreGenConfig.amber_max_height.get());
 		biome_1.addFeature(Decoration.UNDERGROUND_ORES, new CompositeFeature<>(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, AlphamodBlocks.amber_ore.getDefaultState(), 10), new CountRange(), amber_ore_placement_jungle));
 		biome_2.addFeature(Decoration.UNDERGROUND_ORES, new CompositeFeature<>(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, AlphamodBlocks.amber_ore.getDefaultState(), 10), new CountRange(), amber_ore_placement_jungle));
-		
+		*/
+		if(OreGenConfig.generate_overworld.get()) {
+			
+			//all biomes
+			for(Biome biome : ForgeRegistries.BIOMES) {
+				
+				biome.addFeature(Decoration.UNDERGROUND_ORES, new ConfiguredFeature<OreFeatureConfig>(Feature.ORE, new OreFeatureConfig(FillerBlockType.NATURAL_STONE, AlphamodBlocks.amber_ore.getDefaultState(), OreGenConfig.amber_regular_chance.get())));
+				
+			}
+		}
 	}
 }

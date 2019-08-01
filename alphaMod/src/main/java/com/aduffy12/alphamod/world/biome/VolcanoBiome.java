@@ -34,7 +34,7 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 public class VolcanoBiome extends Biome {
 	
 	//surface object
-	public static SurfaceBuilderConfig volcanic_surface = new SurfaceBuilderConfig(BlockList.black_sand.getDefaultState(), BlockList.black_sandstone.getDefaultState(), BlockList.black_sand.getDefaultState());
+	public static SurfaceBuilderConfig volcanic_surface = new SurfaceBuilderConfig(AlphamodBlocks.black_sand.getDefaultState(), AlphamodBlocks.black_sandstone.getDefaultState(), AlphamodBlocks.black_sand.getDefaultState());
 
 	public VolcanoBiome() {
 		super((new Biome.BiomeBuilder()).surfaceBuilder(new CompositeSurfaceBuilder<>(DEFAULT_SURFACE_BUILDER, volcanic_surface)).precipitation(Biome.RainType.RAIN).category(Biome.Category.EXTREME_HILLS).depth(1.4F).scale(0.7F).temperature(1.8F).downfall(0.1F).waterColor(3093137).waterFogColor(3093137).parent((String)null));
@@ -55,9 +55,9 @@ public class VolcanoBiome extends Biome {
 		  this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, Blocks.REDSTONE_ORE.getDefaultState(), 17), COUNT_RANGE, new CountRangeConfig(8, 0, 0, 16)));
 		  this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, Blocks.DIAMOND_ORE.getDefaultState(), 17), COUNT_RANGE, new CountRangeConfig(1, 0, 0, 16)));
 		  this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, Blocks.LAPIS_ORE.getDefaultState(), 17), DEPTH_AVERAGE, new DepthAverageConfig(1, 16, 16)));
-		  this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, BlockList.amber_ore.getDefaultState(), 6), COUNT_RANGE, new CountRangeConfig(5, 16, 0, 48)));
-		  this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, BlockList.basalt.getDefaultState(), 65), COUNT_RANGE, new CountRangeConfig(10, 0, 0, 128)));
-		  this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.SPHERE_REPLACE, new SphereReplaceConfig(BlockList.black_sand, 7, 2, Lists.newArrayList(Blocks.DIRT, Blocks.GRASS_BLOCK)), TOP_SOLID, new FrequencyConfig(3)));
+		  this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, AlphamodBlocks.amber_ore.getDefaultState(), 6), COUNT_RANGE, new CountRangeConfig(5, 16, 0, 48)));
+		  this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, AlphamodBlocks.basalt.getDefaultState(), 65), COUNT_RANGE, new CountRangeConfig(10, 0, 0, 128)));
+		  this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.SPHERE_REPLACE, new SphereReplaceConfig(AlphamodBlocks.black_sand, 7, 2, Lists.newArrayList(Blocks.DIRT, Blocks.GRASS_BLOCK)), TOP_SOLID, new FrequencyConfig(3)));
 	      this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, createCompositeFeature(Feature.RANDOM_FEATURE_LIST, new RandomDefaultFeatureListConfig(new Feature[]{Feature.TALL_TAIGA_TREE, Feature.BIG_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG, IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.666F, 0.1F}, Feature.TREE, IFeatureConfig.NO_FEATURE_CONFIG), AT_SURFACE_WITH_EXTRA, new AtSurfaceWithExtraConfig(0, 0.1F, 1)));
 	      this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, createCompositeFeature(Feature.TALL_GRASS, new TallGrassConfig(Blocks.GRASS.getDefaultState()), TWICE_SURFACE, new FrequencyConfig(1)));
 	      this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, createCompositeFeature(Feature.DEAD_BUSH, IFeatureConfig.NO_FEATURE_CONFIG, TWICE_SURFACE, new FrequencyConfig(2)));

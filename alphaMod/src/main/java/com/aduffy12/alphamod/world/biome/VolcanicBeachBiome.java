@@ -35,7 +35,7 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 public class VolcanicBeachBiome extends Biome {
 
 	//new surface builder config
-	public static SurfaceBuilderConfig volcanic_surface = new SurfaceBuilderConfig(BlockList.black_sand.getDefaultState(), BlockList.black_sandstone.getDefaultState(), BlockList.black_sand.getDefaultState());
+	public static SurfaceBuilderConfig volcanic_surface = new SurfaceBuilderConfig(AlphamodBlocks.black_sand.getDefaultState(), AlphamodBlocks.black_sandstone.getDefaultState(), AlphamodBlocks.black_sand.getDefaultState());
 	
 	//constructor
 	public VolcanicBeachBiome() {
@@ -60,9 +60,9 @@ public class VolcanicBeachBiome extends Biome {
 	    this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, Blocks.REDSTONE_ORE.getDefaultState(), 17), COUNT_RANGE, new CountRangeConfig(8, 0, 0, 16)));
 	    this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, Blocks.DIAMOND_ORE.getDefaultState(), 17), COUNT_RANGE, new CountRangeConfig(1, 0, 0, 16)));
 	    this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, Blocks.LAPIS_ORE.getDefaultState(), 17), DEPTH_AVERAGE, new DepthAverageConfig(1, 16, 16)));
-	    this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, BlockList.amber_ore.getDefaultState(), 6), COUNT_RANGE, new CountRangeConfig(5, 16, 0, 48)));
-	    this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, BlockList.basalt.getDefaultState(), 33), COUNT_RANGE, new CountRangeConfig(10, 0, 0, 32)));
-	    this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.SPHERE_REPLACE, new SphereReplaceConfig(BlockList.black_sand, 7, 2, Lists.newArrayList(Blocks.DIRT, Blocks.GRASS_BLOCK)), TOP_SOLID, new FrequencyConfig(3)));
+	    this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, AlphamodBlocks.amber_ore.getDefaultState(), 6), COUNT_RANGE, new CountRangeConfig(5, 16, 0, 48)));
+	    this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, AlphamodBlocks.basalt.getDefaultState(), 33), COUNT_RANGE, new CountRangeConfig(10, 0, 0, 32)));
+	    this.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, createCompositeFeature(Feature.SPHERE_REPLACE, new SphereReplaceConfig(AlphamodBlocks.black_sand, 7, 2, Lists.newArrayList(Blocks.DIRT, Blocks.GRASS_BLOCK)), TOP_SOLID, new FrequencyConfig(3)));
 	    this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, createCompositeFlowerFeature(Feature.DEFAULT_FLOWERS, SURFACE_PLUS_32, new FrequencyConfig(2)));
 	    this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, createCompositeFeature(Feature.TALL_GRASS, new TallGrassConfig(Blocks.GRASS.getDefaultState()), TWICE_SURFACE, new FrequencyConfig(1)));
 	    this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, createCompositeFeature(Feature.BUSH, new BushConfig(Blocks.BROWN_MUSHROOM), TWICE_SURFACE_WITH_CHANCE, new ChanceConfig(4)));

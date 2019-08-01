@@ -15,11 +15,12 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTiered;
+import net.minecraft.item.TieredItem;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ItemKnife extends ItemTiered {
+public class ItemKnife extends TieredItem {
    private final float attackDamage;
    private final float attackSpeed;
 

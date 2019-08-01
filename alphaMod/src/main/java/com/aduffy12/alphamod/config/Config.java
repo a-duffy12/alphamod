@@ -13,18 +13,18 @@ import net.minecraftforge.fml.common.Mod;
 public class Config {
 
 	//config builder for the server
-	private static final ForgeConfigSpec.Builder server_builder = new ForgeConfigSpec.Builder();
-	public static final ForgeConfigSpec server_config;
+	private static final ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
+	public static final ForgeConfigSpec SERVER_CONFIG;
 	
 	//config builder for the client
-	private static final ForgeConfigSpec.Builder client_builder = new ForgeConfigSpec.Builder();
-	public static final ForgeConfigSpec client_config;
+	private static final ForgeConfigSpec.Builder CLIENT_BUILDER = new ForgeConfigSpec.Builder();
+	public static final ForgeConfigSpec CLIENT_CONFIG;
 	
 	static {
 		
 		//build the two configs
-		server_config = server_builder.build();
-		client_config = client_builder.build();
+		SERVER_CONFIG = SERVER_BUILDER.build();
+		CLIENT_CONFIG = CLIENT_BUILDER.build();
 	}
 	
 	//method to load the config from its location, including any changes made to it

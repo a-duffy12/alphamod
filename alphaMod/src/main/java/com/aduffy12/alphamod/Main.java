@@ -5,8 +5,8 @@ import org.apache.logging.log4j.Logger;
 
 import com.aduffy12.alphamod.blocks.BlockCustomOre;
 import com.aduffy12.alphamod.blocks.BlockCustomStairs;
-import com.aduffy12.alphamod.items.ItemCustomAxe;
-import com.aduffy12.alphamod.items.ItemCustomPickaxe;
+import com.aduffy12.alphamod.items.CustomAxeItem;
+import com.aduffy12.alphamod.items.CustomPickaxeItem;
 import com.aduffy12.alphamod.items.ItemKnife;
 import com.aduffy12.alphamod.lists.AlphamodArmorMaterials;
 import com.aduffy12.alphamod.lists.AlphamodBiomes;
@@ -25,6 +25,10 @@ import net.minecraft.block.BlockSlab;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemBlock;
@@ -33,6 +37,8 @@ import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemTier;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
@@ -68,7 +74,7 @@ public class Main {
 	public Main() {
 		
 		//collecting the congif files from the users
-        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.server_config, "alphamod-serer.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.server_config, "alphamod-server.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.client_config, "alphamod-client.toml");
 		
 		// Register ourselves for server and other game events we are interested in
@@ -131,25 +137,25 @@ public class Main {
 					ItemList.amber = new Item(new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber")),
 					
 					//AMBER_ORE
-					ItemList.amber_ore = new ItemBlock(AlphamodBlocks.amber_ore, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.amber_ore.getRegistryName()),
+					ItemList.amber_ore = new BlockItem(AlphamodBlocks.amber_ore, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.amber_ore.getRegistryName()),
 					
 					//AMBER BLOCK
-					ItemList.amber_block = new ItemBlock(AlphamodBlocks.amber_block, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.amber_block.getRegistryName()),
+					ItemList.amber_block = new BlockItem(AlphamodBlocks.amber_block, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.amber_block.getRegistryName()),
 					
 					//AMBER_AXE
-					ItemList.amber_axe = new ItemCustomAxe(AlphamodToolMaterials.amber, 2.0f, -3.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_axe")),
+					ItemList.amber_axe = new CustomAxeItem(AlphamodToolMaterials.amber, 2.0f, -3.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_axe")),
 					
 					//AMBER_HOE
-					ItemList.amber_hoe = new ItemHoe(AlphamodToolMaterials.amber, 0.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_hoe")),
+					ItemList.amber_hoe = new HoeItem(AlphamodToolMaterials.amber, 0.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_hoe")),
 					
 					//AMBER_PICKAXE
-					ItemList.amber_pickaxe = new ItemCustomPickaxe(AlphamodToolMaterials.amber, -2, -2.8f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_pickaxe")),
+					ItemList.amber_pickaxe = new CustomPickaxeItem(AlphamodToolMaterials.amber, -2, -2.8f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_pickaxe")),
 					
 					//AMBER_SHOVEL
-					ItemList.amber_shovel = new ItemSpade(AlphamodToolMaterials.amber, -1.5f, -3.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_shovel")),
+					ItemList.amber_shovel = new ShovelItem(AlphamodToolMaterials.amber, -1.5f, -3.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_shovel")),
 					
 					//AMBER_SWORD
-					ItemList.amber_sword = new ItemSword(AlphamodToolMaterials.amber, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_sword")),
+					ItemList.amber_sword = new SwordItem(AlphamodToolMaterials.amber, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_sword")),
 					
 					//AMBER_KNIFE
 					ItemList.amber_knife = new ItemKnife(AlphamodToolMaterials.amber, -2.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_knife")),
@@ -158,40 +164,40 @@ public class Main {
 					ItemList.obsidian_shard = new Item(new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_shard")),
 					
 					//BASALT 
-					ItemList.basalt = new ItemBlock(AlphamodBlocks.basalt, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.basalt.getRegistryName()),
+					ItemList.basalt = new BlockItem(AlphamodBlocks.basalt, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.basalt.getRegistryName()),
 					
 					//POLISHED_BASALT
-					ItemList.polished_basalt = new ItemBlock(AlphamodBlocks.polished_basalt, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.polished_basalt.getRegistryName()),
+					ItemList.polished_basalt = new BlockItem(AlphamodBlocks.polished_basalt, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.polished_basalt.getRegistryName()),
 					
 					//OBSIDIAN_AXE
-					ItemList.obsidian_axe = new ItemCustomAxe(AlphamodToolMaterials.obsidian, 4.0f, -3.2f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_axe")),
+					ItemList.obsidian_axe = new CustomAxeItem(AlphamodToolMaterials.obsidian, 4.0f, -3.2f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_axe")),
 					
 					//OBSIDIAN HOE
-					ItemList.obsidian_hoe = new ItemHoe(AlphamodToolMaterials.obsidian, -2.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_hoe")),
+					ItemList.obsidian_hoe = new HoeItem(AlphamodToolMaterials.obsidian, -2.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_hoe")),
 					
 					//OBSIDIAN_PICKAXE
-					ItemList.obsidian_pickaxe = new ItemCustomPickaxe(AlphamodToolMaterials.obsidian, -2, -2.8f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_pickaxe")),
+					ItemList.obsidian_pickaxe = new CustomPickaxeItem(AlphamodToolMaterials.obsidian, -2, -2.8f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_pickaxe")),
 					
 					//OBSIDIAN_SHOVEL
-					ItemList.obsidian_shovel = new ItemSpade(AlphamodToolMaterials.obsidian, -1.5f, -3.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_shovel")),
+					ItemList.obsidian_shovel = new ShovelItem(AlphamodToolMaterials.obsidian, -1.5f, -3.0f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_shovel")),
 					
 					//OBSIDIAN_SWORD
-					ItemList.obsidian_sword = new ItemSword(AlphamodToolMaterials.obsidian, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_sword")),
+					ItemList.obsidian_sword = new SwordItem(AlphamodToolMaterials.obsidian, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_sword")),
 					
 					//OBSIDIAN_KNIFE
 					ItemList.obsidian_knife = new ItemKnife(AlphamodToolMaterials.obsidian, -2.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_knife")),
 					
 					//BONE_HELMET
-					ItemList.bone_helmet = new ItemArmor(AlphamodArmorMaterials.bone, EntityEquipmentSlot.HEAD, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_helmet")),
+					ItemList.bone_helmet = new ArmorItem(AlphamodArmorMaterials.bone, EquipmentSlotType.HEAD, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_helmet")),
 					
 					//BONE_HELMET
-					ItemList.bone_chestplate = new ItemArmor(AlphamodArmorMaterials.bone, EntityEquipmentSlot.CHEST, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_chestplate")),
+					ItemList.bone_chestplate = new ArmorItem(AlphamodArmorMaterials.bone, EquipmentSlotType.CHEST, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_chestplate")),
 					
 					//BONE_HELMET
-					ItemList.bone_leggings = new ItemArmor(AlphamodArmorMaterials.bone, EntityEquipmentSlot.LEGS, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_leggings")),
+					ItemList.bone_leggings = new ArmorItem(AlphamodArmorMaterials.bone, EquipmentSlotType.LEGS, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_leggings")),
 					
 					//BONE_HELMET
-					ItemList.bone_boots = new ItemArmor(AlphamodArmorMaterials.bone, EntityEquipmentSlot.FEET, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_boots")),
+					ItemList.bone_boots = new ArmorItem(AlphamodArmorMaterials.bone, EquipmentSlotType.FEET, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_boots")),
 					
 					//WOOD_KNIFE
 					ItemList.wooden_knife = new ItemKnife(ItemTier.WOOD, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("wooden_knife")),
@@ -209,25 +215,25 @@ public class Main {
 					ItemList.diamond_knife = new ItemKnife(ItemTier.WOOD, 3.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("diamond_knife")),
 					
 					//BLACK_SAND
-					ItemList.black_sand = new ItemBlock(AlphamodBlocks.black_sand, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.black_sand.getRegistryName()),
+					ItemList.black_sand = new BlockItem(AlphamodBlocks.black_sand, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.black_sand.getRegistryName()),
 					
 					//BLACK_SANDSTONE
-					ItemList.black_sandstone = new ItemBlock(AlphamodBlocks.black_sandstone, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.black_sandstone.getRegistryName()),
+					ItemList.black_sandstone = new BlockItem(AlphamodBlocks.black_sandstone, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.black_sandstone.getRegistryName()),
 					
 					//BLACK_SANDSTONE_SLAB
-					ItemList.black_sandstone_slab = new ItemBlock(AlphamodBlocks.black_sandstone_slab, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.black_sandstone_slab.getRegistryName()),
+					ItemList.black_sandstone_slab = new BlockItem(AlphamodBlocks.black_sandstone_slab, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.black_sandstone_slab.getRegistryName()),
 					
 					//BLACK_SANDSTONE_STAIRS
-					ItemList.black_sandstone_stairs = new ItemBlock(AlphamodBlocks.black_sandstone_stairs, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.black_sandstone_stairs.getRegistryName()),
+					ItemList.black_sandstone_stairs = new BlockItem(AlphamodBlocks.black_sandstone_stairs, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.black_sandstone_stairs.getRegistryName()),
 					
 					//CHISELED_BLACK_SANDSTONE
-					ItemList.chiseled_black_sandstone = new ItemBlock(AlphamodBlocks.chiseled_black_sandstone, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.chiseled_black_sandstone.getRegistryName()),
+					ItemList.chiseled_black_sandstone = new BlockItem(AlphamodBlocks.chiseled_black_sandstone, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.chiseled_black_sandstone.getRegistryName()),
 					
 					//CUT_BLACK_SANDSTONE
-					ItemList.cut_black_sandstone = new ItemBlock(AlphamodBlocks.cut_black_sandstone, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.cut_black_sandstone.getRegistryName()),
+					ItemList.cut_black_sandstone = new BlockItem(AlphamodBlocks.cut_black_sandstone, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.cut_black_sandstone.getRegistryName()),
 					
 					//SMOOTH_BLACK_SANDSTONE
-					ItemList.smooth_black_sandstone = new ItemBlock(AlphamodBlocks.smooth_black_sandstone, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.smooth_black_sandstone.getRegistryName())
+					ItemList.smooth_black_sandstone = new BlockItem(AlphamodBlocks.smooth_black_sandstone, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.smooth_black_sandstone.getRegistryName())
 					
 					);
 		}

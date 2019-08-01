@@ -1,16 +1,16 @@
-package com.aidz.alphamod.blocks;
+package com.aduffy12.alphamod.blocks;
 
-import com.aidz.alphamod.lists.BlockList;
-import com.aidz.alphamod.lists.ItemList;
+import com.aduffy12.alphamod.lists.AlphamodBlocks;
+import com.aduffy12.alphamod.lists.ItemList;
 
-import net.minecraft.block.BlockOre;
-import net.minecraft.block.state.IBlockState;
+import net.minecraft.block.OreBlock;
+import net.minecraft.block.state.BlockState;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
-public class BlockCustomOre extends BlockOre{
+public class BlockCustomOre extends OreBlock{
 
 	public BlockCustomOre(Properties builder) {
 		super(builder);
@@ -18,8 +18,8 @@ public class BlockCustomOre extends BlockOre{
 	}	
 		
 	@Override //drop function
-	public Item getItemDropped(IBlockState state, World worldIn, BlockPos pos, int fortune) {
-		if (this == BlockList.amber_ore) {
+	public Item getItemDropped(BlockState state, World worldIn, BlockPos pos, int fortune) {
+		if (this == AlphamodBlocks.amber_ore) {
 			return ItemList.amber;
 	    } else {
 	    	return this.asItem();
@@ -27,11 +27,11 @@ public class BlockCustomOre extends BlockOre{
 	}
 	
 	@Override //xp return function
-	   public int getExpDrop(IBlockState state, net.minecraft.world.IWorldReader reader, BlockPos pos, int fortune) {
+	   public int getExpDrop(BlockState state, net.minecraft.world.IWorldReader reader, BlockPos pos, int fortune) {
 	      World world = reader instanceof World ? (World)reader : null;
 	      if (world == null || this.getItemDropped(state, world, pos, fortune) != this.asItem()) {
 	         int i = 0;
-	         if (this == BlockList.amber_ore) {
+	         if (this == AlphamodBlocks.amber_ore) {
 	            i = MathHelper.nextInt(RANDOM, 3, 7);
 	         }
 	         return i;

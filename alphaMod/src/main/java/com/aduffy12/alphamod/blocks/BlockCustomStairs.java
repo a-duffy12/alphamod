@@ -1,4 +1,4 @@
-package com.aidz.alphamod.blocks;
+package com.aduffy12.alphamod.blocks;
 
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.state.IBlockState;

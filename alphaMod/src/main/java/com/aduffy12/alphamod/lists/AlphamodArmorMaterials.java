@@ -1,15 +1,14 @@
 package com.aduffy12.alphamod.lists;
 
-import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.item.Items;
 
 import com.aduffy12.alphamod.Main;
-
-import net.minecraft.init.Items;
 
 public enum AlphamodArmorMaterials implements IArmorMaterial{
 	
@@ -36,13 +35,13 @@ public enum AlphamodArmorMaterials implements IArmorMaterial{
 	}
 
 	@Override //GETTER
-	public int getDurability(EntityEquipmentSlot slotIn) {
+	public int getDurability(EquipmentSlotType slotIn) {
 		
 		return max_damage_array[slotIn.getIndex()]*this.durability;
 	}
 
 	@Override //GETTER
-	public int getDamageReductionAmount(EntityEquipmentSlot slotIn) {
+	public int getDamageReductionAmount(EquipmentSlotType slotIn) {
 		
 		return this.damageReductionAmount[slotIn.getIndex()];
 	}
