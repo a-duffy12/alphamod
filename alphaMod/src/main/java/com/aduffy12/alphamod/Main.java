@@ -22,20 +22,16 @@ import com.aduffy12.alphamod.config.KnifeConfig;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSand;
 import net.minecraft.block.BlockSlab;
+import net.minecraft.block.SandBlock;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemHoe;
-import net.minecraft.item.ItemSpade;
-import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
@@ -62,7 +58,7 @@ public class Main {
 	public static final String MOD_ID = "alphamod";
 	public static final String NAME = "More Lore";
 	public static final String VERSION = "0.9.5 beta";
-	public static final String ACCEPTED_VERSIONS = "(1.14.3)";
+	public static final String ACCEPTED_VERSIONS = "(1.14.4)";
 	
 	//item group for creative mod
 	public static final ItemGroup ALPHAMOD = new AlphaModItemGroup(12, "alphamod");
@@ -74,8 +70,8 @@ public class Main {
 	public Main() {
 		
 		//collecting the congif files from the users
-        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.server_config, "alphamod-server.toml");
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.client_config, "alphamod-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG, "alphamod-server.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG, "alphamod-client.toml");
 		
 		// Register ourselves for server and other game events we are interested in
 		MinecraftForge.EVENT_BUS.register(this);
@@ -85,8 +81,8 @@ public class Main {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
         
         //loading the custom config files into the game
-        Config.LoadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("alphamod-server.toml").toString());
-        Config.LoadConfig(Config.client_config, FMLPaths.CONFIGDIR.get().resolve("alphamod-client.toml").toString());
+        Config.LoadConfig(Config.SERVER_CONFIG, FMLPaths.CONFIGDIR.get().resolve("alphamod-server.toml").toString());
+        Config.LoadConfig(Config.CLIENT_CONFIG, FMLPaths.CONFIGDIR.get().resolve("alphamod-client.toml").toString());
         
 
         //creating an instance of the mod, useful for encapsulation
@@ -261,13 +257,13 @@ public class Main {
 				AlphamodBlocks.polished_basalt = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5f, 30.0f).sound(SoundType.STONE)).setRegistryName(location("polished_basalt")),
 				
 				//BLACK_SAND
-				AlphamodBlocks.black_sand = new BlockSand(0, Block.Properties.create(Material.SAND).hardnessAndResistance(0.5f, 2.5f).sound(SoundType.SAND)).setRegistryName(location("black_sand")),
+				AlphamodBlocks.black_sand = new SandBlock(0, Block.Properties.create(Material.SAND).hardnessAndResistance(0.5f, 2.5f).sound(SoundType.SAND)).setRegistryName(location("black_sand")),
 				
 				//BLACK_SANDSTONE
 				AlphamodBlocks.black_sandstone = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.8f, 4.0f).sound(SoundType.STONE)).setRegistryName(location("black_sandstone")),
 				
 				//BLACK_SANDSTONE_SLAB
-				AlphamodBlocks.black_sandstone_slab = new BlockSlab(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.8f, 4.0f).sound(SoundType.STONE)).setRegistryName(location("black_sandstone_slab")),
+				AlphamodBlocks.black_sandstone_slab = new SlabBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.8f, 4.0f).sound(SoundType.STONE)).setRegistryName(location("black_sandstone_slab")),
 				
 				//BLACK_SANDSTONE_STAIRS
 				AlphamodBlocks.black_sandstone_stairs = new BlockCustomStairs(AlphamodBlocks.black_sandstone.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(0.8f, 4.0f).sound(SoundType.STONE)).setRegistryName(location("black_sandstone_stairs")),

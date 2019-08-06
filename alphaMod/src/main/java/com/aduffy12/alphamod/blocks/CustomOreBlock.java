@@ -1,22 +1,25 @@
 package com.aduffy12.alphamod.blocks;
 
+import java.util.Random;
+
 import com.aduffy12.alphamod.lists.AlphamodBlocks;
 import com.aduffy12.alphamod.lists.ItemList;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.OreBlock;
-import net.minecraft.block.state.BlockState;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
-public class BlockCustomOre extends OreBlock{
+public class CustomOreBlock extends OreBlock{
 
-	public BlockCustomOre(Properties builder) {
-		super(builder);
+	public CustomOreBlock(Block.Properties properties) {
+		super(properties);
 		
 	}	
 		
+	/*//leftover code from 1.13, do not want to delete yet
 	@Override //drop function
 	public Item getItemDropped(BlockState state, World worldIn, BlockPos pos, int fortune) {
 		if (this == AlphamodBlocks.amber_ore) {
@@ -38,6 +41,13 @@ public class BlockCustomOre extends OreBlock{
 	      }
 	      return 0;
 	   }
+	   */
+	
+	//1.14 version of xp drop function
+	public int getExpDrop(Random num) {
+		 if (this == AlphamodBlocks.amber_ore) {
+	         return MathHelper.nextInt(num, 3, 7);
+	}
 	
 }
 
