@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:iron_nugget"
+    },
+	"Y": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "item": "minecraft:chainmail_chestplate"
+  }
+}

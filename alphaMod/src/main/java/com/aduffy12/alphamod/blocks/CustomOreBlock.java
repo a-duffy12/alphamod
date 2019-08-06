@@ -47,6 +47,9 @@ public class CustomOreBlock extends OreBlock{
 	public int getExpDrop(Random num) {
 		 if (this == AlphamodBlocks.amber_ore) {
 	         return MathHelper.nextInt(num, 3, 7);
+		 } else {
+			 return 0;
+		 }
 	}
 	
 }

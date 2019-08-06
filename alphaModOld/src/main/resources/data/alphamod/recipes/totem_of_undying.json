@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "ESE",
+    "AAA",
+    " A "
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "S": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "A": {
+      "item": "alphamod:amber_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:totem_of_undying"
+  }
+}

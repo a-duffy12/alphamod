@@ -3,8 +3,8 @@ package com.aduffy12.alphamod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.aduffy12.alphamod.blocks.BlockCustomOre;
-import com.aduffy12.alphamod.blocks.BlockCustomStairs;
+import com.aduffy12.alphamod.blocks.CustomStairsBlock;
+import com.aduffy12.alphamod.blocks.CustomOreBlock;
 import com.aduffy12.alphamod.items.CustomAxeItem;
 import com.aduffy12.alphamod.items.CustomPickaxeItem;
 import com.aduffy12.alphamod.items.ItemKnife;
@@ -20,8 +20,6 @@ import com.aduffy12.alphamod.config.Config;
 import com.aduffy12.alphamod.config.KnifeConfig;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSand;
-import net.minecraft.block.BlockSlab;
 import net.minecraft.block.SandBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SoundType;
@@ -248,7 +246,7 @@ public class Main {
 				AlphamodBlocks.amber_block = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 30.0f).lightValue(4).sound(SoundType.STONE)).setRegistryName(location("amber_block")),
 				
 				//AMBER_ORE
-				AlphamodBlocks.amber_ore = new BlockCustomOre(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 15.0f).sound(SoundType.STONE)).setRegistryName(location("amber_ore")),
+				AlphamodBlocks.amber_ore = new CustomOreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0f, 15.0f).sound(SoundType.STONE)).setRegistryName(location("amber_ore")),
 			
 				//BASALT
 				AlphamodBlocks.basalt = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5f, 30.0f).sound(SoundType.STONE)).setRegistryName(location("basalt")),
@@ -266,7 +264,7 @@ public class Main {
 				AlphamodBlocks.black_sandstone_slab = new SlabBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.8f, 4.0f).sound(SoundType.STONE)).setRegistryName(location("black_sandstone_slab")),
 				
 				//BLACK_SANDSTONE_STAIRS
-				AlphamodBlocks.black_sandstone_stairs = new BlockCustomStairs(AlphamodBlocks.black_sandstone.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(0.8f, 4.0f).sound(SoundType.STONE)).setRegistryName(location("black_sandstone_stairs")),
+				AlphamodBlocks.black_sandstone_stairs = new CustomStairsBlock(AlphamodBlocks.black_sandstone.getDefaultState(), Block.Properties.from(AlphamodBlocks.black_sandstone)).setRegistryName(location("black_sandstone_stairs")),
 				
 				//CHISELED_BLACK_SANDSTONE
 				AlphamodBlocks.chiseled_black_sandstone = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.8f, 4.0f).sound(SoundType.STONE)).setRegistryName(location("chiseled_black_sandstone")),

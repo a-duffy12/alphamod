@@ -1,0 +1,35 @@
+modLoader="javafml" #mandatory
+loaderVersion="[27,)" #mandatory (27 is current forge version)
+credits="Youtube tutorials Harry Talks and Loremaster for getting me started" #optional
+authors="aduffy12 aka Omega_Rex" #optional
+
+[[mods]] #mandatory
+modId="alphamod" #mandatory
+version="0.9.5 beta" #mandatory
+displayName="More Lore" #mandatory
+logoFile="" #optional
+description='''
+Vanilla-style mod with the goal of improving the regular survival experience
+    
+Mod vanille avec le but d'ameliorer l'experience de survie reguliere
+'''
+
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.alphamod]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[27,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+
+[[dependencies.alphamod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14.4]"
+    ordering="NONE"
+    side="BOTH"

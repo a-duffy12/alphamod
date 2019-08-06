@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "alphamod:bone_boots"
+  }
+}

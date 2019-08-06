@@ -1,6 +1,6 @@
 package com.aduffy12.alphamod;
 
-import com.aidz.alphamod.lists.ItemList;
+import com.aduffy12.alphamod.lists.ItemList;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;

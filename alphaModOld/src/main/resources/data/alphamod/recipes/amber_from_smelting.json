@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "alphamod:amber_ore"
+  },
+  "result": "alphamod:amber",
+  "experience": 1.0,
+  "cookingtime": 200
+}

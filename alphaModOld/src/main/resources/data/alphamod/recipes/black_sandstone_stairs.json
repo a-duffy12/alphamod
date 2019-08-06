@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "alphamod:black_sandstone"
+      },
+      {
+        "item": "alphamod:chiseled_black_sandstone"
+      },
+      {
+        "item": "alphamod:cut_black_sandstone"
+      }
+    ]
+  },
+  "result": {
+    "item": "alphamod:black_sandstone_stairs",
+    "count": 4
+  }
+}

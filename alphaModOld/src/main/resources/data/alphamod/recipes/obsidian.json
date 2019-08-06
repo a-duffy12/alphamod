@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "alphamod:obsidian_shard"
+    }
+  },
+  "result": {
+    "item": "minecraft:obsidian"
+  }
+}
