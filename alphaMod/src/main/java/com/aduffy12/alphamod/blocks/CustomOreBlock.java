@@ -3,14 +3,10 @@ package com.aduffy12.alphamod.blocks;
 import java.util.Random;
 
 import com.aduffy12.alphamod.lists.AlphamodBlocks;
-import com.aduffy12.alphamod.lists.ItemList;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.OreBlock;
-import net.minecraft.item.Item;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.world.World;
 
 public class CustomOreBlock extends OreBlock{
 

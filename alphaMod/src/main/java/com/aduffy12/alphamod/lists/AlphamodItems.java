@@ -2,7 +2,7 @@ package com.aduffy12.alphamod.lists;
 
 import net.minecraft.item.Item;
 
-public class ItemList {
+public class AlphamodItems {
 
 	public static Item amber;
 	
