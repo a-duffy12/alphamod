@@ -1,7 +1,7 @@
 package com.aduffy12.alphamod.world;
 
 import com.aduffy12.alphamod.config.OreGenConfig;
-import com.aduffy12.alphamod.lists.AlphamodBlocks;
+import com.aduffy12.alphamod.init.AlphamodBlocks;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage.Decoration;

@@ -2,7 +2,7 @@ package com.aduffy12.alphamod.blocks;
 
 import java.util.Random;
 
-import com.aduffy12.alphamod.lists.AlphamodBlocks;
+import com.aduffy12.alphamod.init.AlphamodBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.OreBlock;
