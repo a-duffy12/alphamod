@@ -3,41 +3,12 @@ package com.aduffy12.alphamod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.aduffy12.alphamod.blocks.CustomStairsBlock;
-import com.aduffy12.alphamod.blocks.CustomOreBlock;
-import com.aduffy12.alphamod.items.CustomAxeItem;
-import com.aduffy12.alphamod.items.CustomPickaxeItem;
-import com.aduffy12.alphamod.items.ItemKnife;
+import com.aduffy12.alphamod.world.AlphamodWorldType;
 import com.aduffy12.alphamod.world.OreGeneration;
-import com.aduffy12.alphamod.world.biomes.VolcanicBeachBiome;
-import com.aduffy12.alphamod.world.biomes.VolcanoBiome;
 import com.aduffy12.alphamod.config.Config;
-import com.aduffy12.alphamod.config.KnifeConfig;
-import com.aduffy12.alphamod.init.AlphamodArmorMaterials;
-import com.aduffy12.alphamod.init.AlphamodBiomes;
-import com.aduffy12.alphamod.init.AlphamodBlocks;
-import com.aduffy12.alphamod.init.AlphamodItems;
-import com.aduffy12.alphamod.init.AlphamodToolMaterials;
-
-import net.minecraft.block.Block;
-import net.minecraft.block.SandBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.HoeItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemTier;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.SwordItem;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.biome.Biome;
+import net.minecraft.world.WorldType;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -60,6 +31,9 @@ public class Main {
 	
 	//item group for creative mod
 	public static final ItemGroup ALPHAMOD = new AlphaModItemGroup(12, "alphamod");
+	
+	//custom world type for testing a biome
+	public static final WorldType ALPHAMOD_TYPE = new AlphamodWorldType();
 	
 	//logger instance
 	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);

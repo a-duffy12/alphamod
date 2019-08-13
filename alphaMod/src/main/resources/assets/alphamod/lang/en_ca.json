@@ -42,8 +42,10 @@
 	"block.alphamod.cut_black_sandstone": "Cut Black Sandstone",
 	"block.alphamod.smooth_black_sandstone": "Smooth Black Sandstone",
 	
-	"biome.alphamod.volcanic_beach": "Volcanic Beach",
-	"biome.alphamod.volcano": "Volcano",
+	"biome.alphamod.volcanic_beach_biome": "Volcanic Beach",
+	"biome.alphamod.volcano_biome": "Volcano",
 	
+	"worldType.alphamod.alphamod_type": "Alphamod World",
+		
 	"itemGroup.alphamod": "More Lore" 
 }

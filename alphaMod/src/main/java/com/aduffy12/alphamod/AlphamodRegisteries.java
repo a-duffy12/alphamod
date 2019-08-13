@@ -228,5 +228,7 @@ public class AlphamodRegisteries {
 		
 		);
 		
+		AlphamodBiomes.registerBiomes();
+		
 	}
 }
