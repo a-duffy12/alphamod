@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "alphamod:black_sandstone"
+  },
+  "result": "alphamod:smooth_black_sandstone",
+  "experience": 0,
+  "cookingtime": 200
+}

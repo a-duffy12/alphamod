@@ -22,7 +22,13 @@ public class Config {
 	
 	static {
 		
-		//build the two configs
+		//build the ore generation config
+		OreGenConfig.init(SERVER_BUILDER, CLIENT_BUILDER);
+		
+		//build the knife values config
+		KnifeConfig.init(SERVER_BUILDER, CLIENT_BUILDER);
+		
+		//build the client and server configs
 		SERVER_CONFIG = SERVER_BUILDER.build();
 		CLIENT_CONFIG = CLIENT_BUILDER.build();
 	}

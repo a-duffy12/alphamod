@@ -38,9 +38,13 @@
 	"block.alphamod.black_sandstone": "Black Sandstone",
 	"block.alphamod.black_sandstone_slab": "Black Sandstone Slab",
 	"block.alphamod.black_sandstone_stairs": "Black Sandstone Stairs",
+	"block.alphamod.black_sandstone_wall": "Black Sandstone Wall",
 	"block.alphamod.chiseled_black_sandstone": "Chiseled Black Sandstone",
 	"block.alphamod.cut_black_sandstone": "Cut Black Sandstone",
+	"block.alphamod.cut_black_sandstone_slab": "Cut Black Sandstone Slab",
 	"block.alphamod.smooth_black_sandstone": "Smooth Black Sandstone",
+	"block.alphamod.smooth_black_sandstone_slab": "Smooth Black Sandstone Slab",
+	"block.alphamod.smooth_black_sandstone_stairs": "Smooth Black Sandstone Stairs",
 	
 	"biome.alphamod.volcanic_beach_biome": "Volcanic Beach",
 	"biome.alphamod.volcano_biome": "Volcano",

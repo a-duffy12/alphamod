@@ -2,15 +2,11 @@ package com.aduffy12.alphamod.blocks;
 
 import java.util.Random;
 
-import com.aduffy12.alphamod.lists.AlphamodBlocks;
-import com.aduffy12.alphamod.lists.ItemList;
+import com.aduffy12.alphamod.init.AlphamodBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.OreBlock;
-import net.minecraft.item.Item;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.world.World;
 
 public class CustomOreBlock extends OreBlock{
 
@@ -47,6 +43,9 @@ public class CustomOreBlock extends OreBlock{
 	public int getExpDrop(Random num) {
 		 if (this == AlphamodBlocks.amber_ore) {
 	         return MathHelper.nextInt(num, 3, 7);
+		 } else {
+			 return 0;
+		 }
 	}
 	
 }

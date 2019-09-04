@@ -1,3 +1,196 @@
+Build: 1.14.4-28.0.83 - Sun Sep 01 18:42:33 GMT 2019
+	cpw:
+		Add a modfolderfactory. Fix up login payload exposure.
+		Signed-off-by: cpw <cpw+github@weeksfamily.ca>
+
+=========
+Build: 1.14.4-28.0.82 - Sun Sep 01 15:33:27 GMT 2019
+	cpw:
+		Peel IModLocator into the SPI package and extract a small IModFile
+		interface as well. This allows building external IModLocator
+		implementations.
+		Signed-off-by: cpw <cpw+github@weeksfamily.ca>
+
+=========
+Build: 1.14.4-28.0.81 - Sat Aug 31 17:57:15 GMT 2019
+	cpw:
+		Move indexFor and biConsumer into FMLHandshakeHandler and expose them
+		publicly, so mods can add additional login messages. Closes #6087
+		Signed-off-by: cpw <cpw+github@weeksfamily.ca>
+
+	faj10:
+		Added getters for FMLPlayMessages.SpawnEntity
+
+	tobias.hotz:
+		move default log level for debug file to debug instead of trace, and
+		remove millis from console and GUI. Also remove unused config xmls
+
+	cpw:
+		Add in MC REGISTER nonsense. Shut up #5730
+		Tweak network a bit to fix initialization order stupidity. (Constants
+		don't load classes!)
+		Signed-off-by: cpw <cpw+github@weeksfamily.ca>
+
+	cpw:
+		Add in some client only player connectivity events. Closes #5536
+		Signed-off-by: cpw <cpw+github@weeksfamily.ca>
+
+=========
+Build: 1.14.4-28.0.76 - Sat Aug 31 12:15:17 GMT 2019
+	gigaherz:
+		Hookup BlockEvent.FluidPlaceBlockEvent (#6103)
+
+=========
+Build: 1.14.4-28.0.75 - Fri Aug 30 03:42:51 GMT 2019
+	cpw:
+		Update libs to 1.0 versions, bump grgit, and fix tag search behaviour
+		that resulted.
+		Signed-off-by: cpw <cpw+github@weeksfamily.ca>
+
+=========
+Build: 1.14.4-28.0.74 - Thu Aug 29 19:09:49 GMT 2019
+	gigaherz:
+		Fluid rework derp fixes. (#6098)
+		* Fix nulls returning from non-null methods, and null-check of
+		non-nullable values.
+		* Fix missed computation of the isEmpty flag in FluidStack
+		* Cleanup getAmount/isEmpty calls.
+		* Remove redundant suppliers. That info is readily available from the
+		vanilla Fluid / FluidState.
+
+=========
+Build: 1.14.4-28.0.73 - Thu Aug 29 04:34:22 GMT 2019
+	daemon.umbra:
+		Change fml.modloading.brokenfile.optifine to not imply that Forge is
+		responsible for Forge-Optifine compatibility. (#6080)
+
+	ichttt:
+		Fix Digging particle sometimes using the wrong block pos to get
+		additional model data (#6077)
+
+	williewillus:
+		Minor model system cleanup/documentation (#6089)
+
+=========
+Build: 1.14.4-28.0.70 - Thu Aug 29 04:28:28 GMT 2019
+	ichttt:
+		Add a config comment that lists the available constants of enums (#6079)
+
+=========
+Build: 1.14.4-28.0.69 - Thu Aug 29 04:18:57 GMT 2019
+	bl4ckscor33:
+		Restore PotionShiftEvent (#6042)
+
+=========
+Build: 1.14.4-28.0.68 - Thu Aug 29 04:13:38 GMT 2019
+	danielgoossens:
+		Added new InputEvent.MouseScrollEvent, fixes #5811 (#6037)
+
+=========
+Build: 1.14.4-28.0.67 - Thu Aug 29 03:34:14 GMT 2019
+	luasmrks:
+		Strip side annotations from CropsBlock.getSeedsItem (#6013)
+
+	Bward7864:
+		Add Villager Trading Events (#6016)
+
+=========
+Build: 1.14.4-28.0.65 - Thu Aug 29 03:14:27 GMT 2019
+	wynprice999:
+		Updated constants to 1.14 (#6012)
+
+	46117728+valoeghese:
+		Added hook to allow biomes to specify custom river variants. (#5969)
+
+=========
+Build: 1.14.4-28.0.63 - Thu Aug 29 01:42:25 GMT 2019
+	williewillus:
+		Add particle factory registration event (#6018)
+
+=========
+Build: 1.14.4-28.0.62 - Thu Aug 29 01:30:04 GMT 2019
+	lex:
+		Recipe system cleanup. (#6014)
+
+	gigaherz:
+		Fluid API rework (#5983) - Moved forge fluids into FluidAttributes
+		companion object to the vanilla Fluid. By gigaherz - Redesigned the
+		Fluid API to be closer to the Items API. By King Lemming Co-authored-by:
+		King Lemming <kinglemming@gmail.com>
+
+	gigaherz:
+		Fix license headers so `gradlew build` is happy.
+
+	gigaherz:
+		Make FluidStacks non-nullable, and implement some TODOs.
+
+=========
+Build: 1.14.4-28.0.58 - Thu Aug 29 01:12:54 GMT 2019
+	bjfccb:
+		Fix regular arrows giving off particles after a world reload (MC-107941)
+		(#6061)
+
+	ichttt:
+		Fix coremod not redirecting to the correct method (#6078)
+
+=========
+Build: 1.14.4-28.0.56 - Wed Aug 28 19:59:19 GMT 2019
+	lex:
+		Fix blocks being placed in adventure mode. Closes #6085 Add early error
+		for setting invalid world directory. Closes #6084 Fix PlayerTickEvent
+		not firing when dead, even if player isn't removed from world yet.
+		Closes #6074 Fix PlayerDestroyItemEvent not firing for some cases.
+		Closes #6067
+
+=========
+Build: 1.14.4-28.0.55 - Tue Aug 20 22:40:50 GMT 2019
+	lex:
+		Fix Javac generics breakage.
+
+	lex:
+		Sort server.properties while writing.
+
+	lex:
+		Add Argument serializer for ModIdArgument. EnumArgument can't as vanilla
+		doesn't support extra data.
+
+	lex:
+		Prevent worlds from unloading while players are in out-of-world states
+		by tracking all worlds references by every player in the server's player
+		list.
+
+=========
+Build: 1.14.4-28.0.51 - Tue Aug 20 02:46:20 GMT 2019
+	lex:
+		Fix Configs not generating correctly on first load Closes #6069
+
+	lex:
+		Fix chunk load failure when entering End portal Closes #6068
+
+=========
+Build: 1.14.4-28.0.49 - Thu Aug 15 18:04:06 GMT 2019
+	williewillus:
+		Add hook to load custom mrls/rls not attached to a block or item. 
+		(#6010)
+
+=========
+Build: 1.14.4-28.0.48 - Thu Aug 15 17:35:07 GMT 2019
+	bl4ckscor33:
+		Cover more cases for RightClickBlock event and restore onItemUseFirst
+		(#6009)
+
+=========
+Build: 1.14.4-28.0.47 - Thu Aug 15 17:17:36 GMT 2019
+	kirderf4:
+		Make DimensionManager.SavedEntry save sky light consistently (#6019)
+
+=========
+Build: 1.14.4-28.0.46 - Wed Aug 14 23:13:25 GMT 2019
+	lex:
+		Fix extract inheritance not using proper classpath and update
+		buildscript for FG asm changes.
+
+=========
 Build: 1.14.4-28.0.45 - Mon Aug 05 12:56:59 GMT 2019
 	cpw:
 		Grrr. Stupid error. Sorry lex: I fixed it.

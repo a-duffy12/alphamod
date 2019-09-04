@@ -1,8 +1,8 @@
-package com.aduffy12.alphamod.lists;
+package com.aduffy12.alphamod.init;
 
 import net.minecraft.item.Item;
 
-public class ItemList {
+public class AlphamodItems {
 
 	public static Item amber;
 	

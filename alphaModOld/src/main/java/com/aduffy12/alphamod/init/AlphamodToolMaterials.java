@@ -1,4 +1,4 @@
-package com.aduffy12.alphamod.lists;
+package com.aduffy12.alphamod.init;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
@@ -7,8 +7,8 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum AlphamodToolMaterials implements IItemTier {
 
-	amber(7.0f, 7.0f, 97, 1, 18, ItemList.amber),
-	obsidian(4.0f, 5.0f, 8193, 3, 12, ItemList.obsidian_shard)
+	amber(7.0f, 7.0f, 97, 1, 18, AlphamodItems.amber),
+	obsidian(4.0f, 5.0f, 8193, 3, 12, AlphamodItems.obsidian_shard)
 	;
 	
 	private float attackDamage, efficiency;

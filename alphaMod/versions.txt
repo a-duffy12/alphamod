@@ -146,3 +146,17 @@ Version 0.9.5
 beta
 	+ added Config files, for OreGen and Knife properties
 	+ update to 1.14.3 will commence
+
+Version 0.9.6
+beta
+	+ updated to 1.14.4
+	+ reworked all the new file names, convetions now match Mojang's style
+	+ corrected ore generation
+	+ Volcanic Beach and Volcano biomes are now availble in the world, as well as in a custom world type, and have been updated for 1.14
+	- Knife code is still obfuscated
+
+Version 0.9.7
+beta
+	+ added custom Bone Armor equip sound
+	- Knife code is still obfuscated, may simply define them as swords to make sure everything else runs
+	

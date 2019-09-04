@@ -14,6 +14,8 @@ public class OreGenConfig {
 	public static ForgeConfigSpec.IntValue basalt_min_height;
 	public static ForgeConfigSpec.IntValue basalt_max_height;
 	
+	public static ForgeConfigSpec.BooleanValue generate_overworld;
+	
 	public static void init(ForgeConfigSpec.Builder server, ForgeConfigSpec.Builder client) {
 		
 		server.comment("OreGen Config");
@@ -46,9 +48,13 @@ public class OreGenConfig {
 				.comment("Minimum height that Basalt will spawn")
 				.defineInRange("oregen.basalt_min", 0, 0, 64);
 		
-		basalt_min_height = server
+		basalt_max_height = server
 				.comment("Minimum height that Basalt will spawn")
-				.defineInRange("oregen.basalt_min",16, 0, 128);
+				.defineInRange("oregen.basalt_min", 32, 0, 128);
+		
+		generate_overworld = server
+				.comment("Will the overworld generate or not") //must be true for custom ores to generate at all
+				.define("oregen.generate_overworld", true);
 		
 	}
 	

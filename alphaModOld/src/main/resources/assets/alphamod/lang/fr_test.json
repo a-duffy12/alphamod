@@ -5,19 +5,19 @@
 	"item.alphamod.amber_hoe": "Houe en ambre",
 	"item.alphamod.amber_pickaxe": "Pioche en ambre",
 	"item.alphamod.amber_shovel": "Pelle en ambre",
-	"item.alphamod.amber_sword": "Épée en ambre",
+	"item.alphamod.amber_sword": "Epee en ambre",
 	"item.alphamod.amber_knife": "Couteau en ambre",
 	
 	"block.alphamod.amber_ore": "Minerai d'ambre",
 	"block.alphamod.amber_block": "Bloc d'ambre",
 	
-	"item.alphamod.obsidian_shard": "Éclat d'obsidienne",
+	"item.alphamod.obsidian_shard": "Eclat d'obsidienne",
 	
 	"item.alphamod.obsidian_axe": "Hache en obsidienne",
 	"item.alphamod.obsidian_hoe": "Houe en obsidienne",
 	"item.alphamod.obsidian_pickaxe": "Pioche en obsidienne",
 	"item.alphamod.obsidian_shovel": "Pelle en obsidienne",
-	"item.alphamod.obsidian_sword": "Épée en obsidienne",
+	"item.alphamod.obsidian_sword": "Epee en obsidienne",
 	"item.alphamod.obsidian_knife": "Couteau en obsidienne",
 	
 	"block.alphamod.basalt": "Basalte",
@@ -25,7 +25,7 @@
 	
 	"item.alphamod.bone_helmet": "Casque en os",
 	"item.alphamod.bone_chestplate": "Plastron en os",
-	"item.alphamod.bone_leggings": "Jambières en os",
+	"item.alphamod.bone_leggings": "Jambieres en os",
 	"item.alphamod.bone_boots": "Bottes en os",
 	
 	"item.alphamod.wooden_knife": "Couteau en bois",
@@ -35,15 +35,18 @@
 	"item.alphamod.diamond_knife": "Couteau en diamant",
 	
 	"block.alphamod.black_sand": "Sable noir",
-	"block.alphamod.black_sandstone": "Grès noir",
-	"block.alphamod.black_sandstone_slab": "Dalle de grès noir",
-	"block.alphamod.black_sandstone_stairs": "Escaliers de grès noir",
-	"block.alphamod.chiseled_black_sandstone": "Grès noir ciselé",
-	"block.alphamod.cut_black_sandstone": "Grès noir taillé",
-	"block.alphamod.smooth_black_sandstone": "Grès noir lisse",
+	"block.alphamod.black_sandstone": "Gres noir",
+	"block.alphamod.black_sandstone_slab": "Dalle de gres noir",
+	"block.alphamod.black_sandstone_stairs": "Escaliers de gres noir",
+	"block.alphamod.chiseled_black_sandstone": "Gres noir ciselï¿½",
+	"block.alphamod.cut_black_sandstone": "Gres noir taillï¿½",
+	"block.alphamod.smooth_black_sandstone": "Gres noir lisse",
 	
-	"biome.alphamod.volcanic_beach": "Plage volcanique",
-	"biome.alphamod.volcano": "Volcan",
+	"biome.alphamod.volcanic_beach_biome": "Plage volcanique",
+	"biome.alphamod.volcano_biome": "Volcan",
+	
+	
+	"worldType.alphamod.alphamod_type": "Monde alphamod",
 	
 	"itemGroup.alphamod": "More Lore" 
 }

@@ -1,4 +1,4 @@
-package com.aduffy12.alphamod.lists;
+package com.aduffy12.alphamod.init;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;

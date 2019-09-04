@@ -1,6 +1,6 @@
 package com.aduffy12.alphamod;
 
-import com.aidz.alphamod.lists.ItemList;
+import com.aduffy12.alphamod.init.AlphamodItems;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -14,7 +14,7 @@ public class AlphaModItemGroup extends ItemGroup {
 	@Override
 	public ItemStack createIcon() {
 		
-		return new ItemStack(ItemList.amber);
+		return new ItemStack(AlphamodItems.amber);
 	}
 
 }

@@ -1,5 +1,5 @@
 modLoader="javafml" #mandatory
-loaderVersion="[27,)" #mandatory (27 is current forge version)
+loaderVersion="[28,)" #mandatory (28 is current forge version)
 credits="Youtube tutorials Harry Talks and Loremaster for getting me started" #optional
 authors="aduffy12 aka Omega_Rex" #optional
 
@@ -21,7 +21,7 @@ Mod vanille avec le but d'ameliorer l'experience de survie reguliere
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency
-    versionRange="[27,)" #mandatory
+    versionRange="[28,)" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER

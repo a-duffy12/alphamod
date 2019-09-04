@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "alphamod:cut_black_sandstone"
+      }
+    ]
+  },
+  "result": {
+    "item": "alphamod:cut_black_sandstone_slab",
+    "count": 6
+  }
+}
