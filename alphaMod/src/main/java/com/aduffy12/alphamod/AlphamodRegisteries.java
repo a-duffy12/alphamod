@@ -85,7 +85,7 @@ public class AlphamodRegisteries {
 			AlphamodItems.amber_sword = new SwordItem(AlphamodToolMaterials.amber, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_sword")),
 			
 			//AMBER_KNIFE
-			AlphamodItems.amber_knife = new ItemKnife(AlphamodToolMaterials.amber, -2.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_knife")),
+			AlphamodItems.amber_knife = new /* ItemKnife(AlphamodToolMaterials.amber, -2.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_knife")) */ SwordItem(AlphamodToolMaterials.amber, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("amber_knife")),
 			
 			//OBSIDIAN_SHARD
 			AlphamodItems.obsidian_shard = new Item(new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_shard")),
@@ -112,7 +112,7 @@ public class AlphamodRegisteries {
 			AlphamodItems.obsidian_sword = new SwordItem(AlphamodToolMaterials.obsidian, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_sword")),
 			
 			//OBSIDIAN_KNIFE
-			AlphamodItems.obsidian_knife = new ItemKnife(AlphamodToolMaterials.obsidian, -2.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_knife")),
+			AlphamodItems.obsidian_knife = new /* ItemKnife(AlphamodToolMaterials.obsidian, -2.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_knife")), */ SwordItem(AlphamodToolMaterials.obsidian, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("obsidian_knife")),
 			
 			//BONE_HELMET
 			AlphamodItems.bone_helmet = new ArmorItem(AlphamodArmorMaterials.bone, EquipmentSlotType.HEAD, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_helmet")),
@@ -127,19 +127,19 @@ public class AlphamodRegisteries {
 			AlphamodItems.bone_boots = new ArmorItem(AlphamodArmorMaterials.bone, EquipmentSlotType.FEET, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("bone_boots")),
 			
 			//WOOD_KNIFE
-			AlphamodItems.wooden_knife = new ItemKnife(ItemTier.WOOD, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("wooden_knife")),
+			AlphamodItems.wooden_knife = new /* ItemKnife(ItemTier.WOOD, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("wooden_knife")), */ SwordItem(ItemTier.WOOD, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("wooden_knife")),
 			
 			//STONE_KNIFE
-			AlphamodItems.stone_knife = new ItemKnife(ItemTier.STONE, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("stone_knife")),
+			AlphamodItems.stone_knife = new /* ItemKnife(ItemTier.STONE, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("stone_knife")), */ SwordItem(ItemTier.STONE, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("stone_knife")),
 			
 			//IRON_KNIFE
-			AlphamodItems.iron_knife = new ItemKnife(ItemTier.IRON, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("iron_knife")),
+			AlphamodItems.iron_knife = new /* ItemKnife(ItemTier.IRON, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("iron_knife")), */ SwordItem(ItemTier.IRON, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("iron_knife")),
 			
 			//GOLDEN_KNIFE
-			AlphamodItems.golden_knife = new ItemKnife(ItemTier.GOLD, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("golden_knife")),
+			AlphamodItems.golden_knife = new /* ItemKnife(ItemTier.GOLD, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("golden_knife")), */ SwordItem(ItemTier.GOLD, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("golden_knife")),
 			
 			//DIAMOND_KNIFE
-			AlphamodItems.diamond_knife = new ItemKnife(ItemTier.WOOD, 3.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("diamond_knife")),
+			AlphamodItems.diamond_knife = new /* ItemKnife(ItemTier.DIAMOND, 0.5f, (float)KnifeConfig.knife_attack_speed.get(), new Item.Properties().group(ALPHAMOD)).setRegistryName(location("diamond_knife")), */ SwordItem(ItemTier.DIAMOND, 0, -2.4f, new Item.Properties().group(ALPHAMOD)).setRegistryName(location("diamond_knife")),
 			
 			//BLACK_SAND
 			AlphamodItems.black_sand = new BlockItem(AlphamodBlocks.black_sand, new Item.Properties().group(ALPHAMOD)).setRegistryName(AlphamodBlocks.black_sand.getRegistryName()),

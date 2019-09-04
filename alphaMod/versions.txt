@@ -160,3 +160,16 @@ beta
 	+ added custom Bone Armor equip sound
 	- Knife code is still obfuscated, may simply define them as swords to make sure everything else runs
 	
+
+Version 0.10.0
+beta
+
+	+ added 4 more black sandstone blocks (wall, cut slab, smooth slad, and smooth stairs)
+	+ consistency with new sandstone blocks in 1.14
+	+ stonecutter recipes for all sandstone blocks (old and new)
+
+Version 0.10.1
+beta
+
+	+ progress made with knives, still a few errors (damage stacking onto weapon)
+	+ Knives are now an object of the sword class (band-aid while testing the mod)

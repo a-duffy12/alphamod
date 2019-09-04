@@ -5,7 +5,7 @@ authors="aduffy12 aka Omega_Rex" #optional
 
 [[mods]] #mandatory
 modId="alphamod" #mandatory
-version="0.9.7 beta" #mandatory
+version="0.10.1 beta" #mandatory
 displayName="More Lore" #mandatory
 logoFile="" #optional
 description='''
