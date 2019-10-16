@@ -6,8 +6,10 @@ import com.google.common.collect.Multimap;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
@@ -31,7 +33,7 @@ public class ItemKnife extends TieredItem {
       return this.attackDamage;
    }
 
-   public boolean canPlayerBreakBlockWhileHolding(BlockState state, World worldIn, BlockPos pos, EntityPlayer player) {
+   public boolean canPlayerBreakBlockWhileHolding(BlockState state, World worldIn, BlockPos pos, PlayerEntity player) {
       return !player.isCreative();
    }
 
@@ -42,14 +44,17 @@ public class ItemKnife extends TieredItem {
       
    }
 
+   //TODO
+   /*
+   
    //does 2 durability when hitting entities, drawback of hitting so fast
-   public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
+   public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
       stack.damageItem(2, attacker);
       return true;
    }
 
    //what happens when you destroy a block, costs more durability, at 3 each
-   public boolean onBlockDestroyed(ItemStack stack, World worldIn, BlockState state, BlockPos pos, EntityLivingBase entityLiving) {
+   public boolean onBlockDestroyed(ItemStack stack, World worldIn, BlockState state, BlockPos pos, LivingEntity entityLiving) {
       if (state.getBlockHardness(worldIn, pos) != 0.0F) {
          stack.damageItem(3, entityLiving);
       }
@@ -63,7 +68,7 @@ public class ItemKnife extends TieredItem {
    }
    
    //some shit that seems integral to making them work correctly, idk why
-   public Multimap<String, AttributeModifier> getAttributeModifiers(EntityEquipmentSlot equipmentSlot) {
+   public Multimap<String, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
       @SuppressWarnings("deprecation")
 	Multimap<String, AttributeModifier> multimap = super.getAttributeModifiers(equipmentSlot);
       if (equipmentSlot == EquipmentSlotType.MAINHAND) {
@@ -72,6 +77,6 @@ public class ItemKnife extends TieredItem {
       }
 
       return multimap;
-   }
+   } */
 
 }

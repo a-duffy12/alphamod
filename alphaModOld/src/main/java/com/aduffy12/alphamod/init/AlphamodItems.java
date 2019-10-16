@@ -43,8 +43,12 @@ public class AlphamodItems {
 	public static Item black_sandstone;
 	public static Item black_sandstone_slab;
 	public static Item black_sandstone_stairs;
+	public static Item black_sandstone_wall;
 	public static Item chiseled_black_sandstone;
 	public static Item cut_black_sandstone;
+	public static Item cut_black_sandstone_slab;
 	public static Item smooth_black_sandstone;
+	public static Item smooth_black_sandstone_slab;
+	public static Item smooth_black_sandstone_stairs;
 		
 }

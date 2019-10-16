@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "alphamod:smooth_block/black_sandstone_slab" },
+        "type=top": { "model": "alphamod:block/smooth_black_sandstone_slab_top" },
+        "type=double": { "model": "alphamod:block/smooth_black_sandstone" }
+    }
+}

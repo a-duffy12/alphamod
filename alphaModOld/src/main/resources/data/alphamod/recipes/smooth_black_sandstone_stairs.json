@@ -8,12 +8,12 @@
   "key": {
     "#": [
       {
-        "item": "alphamod:black_sandstone"
+        "item": "alphamod:smooth_black_sandstone"
       }
     ]
   },
   "result": {
-    "item": "alphamod:black_sandstone_stairs",
+    "item": "alphamod:smooth_black_sandstone_stairs",
     "count": 4
   }
 }

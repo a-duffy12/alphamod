@@ -12,7 +12,7 @@ import com.aduffy12.alphamod.Main;
 
 public enum AlphamodArmorMaterials implements IArmorMaterial{
 	
-	bone("bone", 22, new int[] {1, 4, 5, 2}, 5, Items.BONE, "entity.skeleton.ambient", 0.0f) //TODO custom equip sound
+	bone("bone", 22, new int[] {1, 4, 5, 2}, 5, Items.BONE, "item.armor.equip_bone", 0.0f) 
 	;
 	
 	private String name, equipSound;

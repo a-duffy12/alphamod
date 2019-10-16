@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "alphamod:black_sandstone"
+  },
+  "result": "alphamod:black_sandstone_slab",
+  "count": 2
+}
